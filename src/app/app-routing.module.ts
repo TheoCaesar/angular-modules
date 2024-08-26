@@ -12,7 +12,6 @@ const appRoutes: Routes = [
     component: RecipesComponent,
     canActivate: [AuthGuard],
   },
-  { path: 'shopping-list', component: ShoppingListComponent },
   { path: 'auth', component: AuthComponent }
 ];
 
