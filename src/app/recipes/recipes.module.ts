@@ -26,14 +26,5 @@ import { RecipeRoutingModule } from './recipes-routing.module';
     ReactiveFormsModule,
     RecipeRoutingModule,
   ],
-  //allow access to components in app module
-  exports: [
-    RecipesComponent,
-    RecipeListComponent,
-    RecipeDetailComponent,
-    RecipeItemComponent,
-    RecipeStartComponent,
-    RecipeEditComponent
-  ]
 })
 export class RecipesModule {}
