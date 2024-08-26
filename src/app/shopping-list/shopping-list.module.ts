@@ -1,10 +1,10 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
-import { BrowserModule } from "@angular/platform-browser";
 import { ShoppingEditComponent } from "./shopping-edit/shopping-edit.component";
 import { ShoppingListComponent } from "./shopping-list.component";
 import { Routes, RouterModule } from "@angular/router";
+import { SharedModule } from "../shared/shared.module";
 
  const shoppingListRoutes : Routes = [
   { path: 'shopping-list', component: ShoppingListComponent },
@@ -16,7 +16,8 @@ import { Routes, RouterModule } from "@angular/router";
     ShoppingEditComponent,
   ],
   imports: [
-    CommonModule,
+    // CommonModule, replaced by export version in shared module
+    SharedModule,
     FormsModule,
     RouterModule.forChild(shoppingListRoutes)
   ],
